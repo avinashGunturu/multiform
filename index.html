@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Driving License Renewal</h1>
+      <div class="conatiner">
+        <div class="progress-bar-container">
+          <div class="progress-bar passive"></div>
+          <div class="progress-bar active" id="progress-bar"></div>
+        </div>
+        <div class="instruction">
+          <h3 class="instruction-heading">Let's get started!</h3>
+          <p class="instruction-p">
+            Add your details (As per your registered records)
+          </p>
+        </div>
+        <div class="form-container active" id="form-container">
+          <div class="form">
+            <div class="name">
+              <p for="name">Name</p>
+              <input type="text" placeholder="  Enter Name" id="name" />
+            </div>
+            <div class="ndl">
+              <p for="ndl">Nature of Driving License</p>
+              <div class="radio-input-container">
+                <div class="radio-input one">
+                  <input type="radio" id="private" name="age" value="private" />
+                  <label for="private">Private</label>
+                </div>
+                <div class="radio-input two">
+                  <input
+                    type="radio"
+                    id="commercial"
+                    name="age"
+                    value="commercial"
+                  />
+                  <label for="commercial">commercial</label>
+                </div>
+              </div>
+            </div>
+            <div class="ndl">
+              <p for="name">Type of Previous Driving License</p>
+              <form>
+                <div class="radio-input-container">
+                  <div class="radio-input one">
+                    <input
+                      type="radio"
+                      id="paper"
+                      name="age"
+                      value="paper Driving License"
+                    />
+                    <label for="paper">Paper Driving License</label>
+                  </div>
+                  <div class="radio-input two">
+                    <input
+                      type="radio"
+                      id="smart"
+                      name="age"
+                      value="Smart Driving License"
+                    />
+                    <label for="Smart">Smart Driving License</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="btns">
+              <button class="btn" id="next">
+                Next <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="form-container1" id="form-container1">
+          <div class="place">
+            <p>Place where Driving License was issued</p>
+            <input
+              type="text"
+              name="place"
+              id="place"
+              placeholder="  Enter Place Name"
+            />
+          </div>
+          <div class="drop-down-container" id="iyear">
+            <p>Issued Year of License</p>
+            <div class="dropdowncard">
+              <p class="selected">Choose Issued year</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="dropDowmMenu" id="issuedYear">
+              <p class="option"><label>2000</label></p>
+              <p class="option"><label>2001</label></p>
+              <p class="option"><label>2002</label></p>
+              <p class="option"><label>2003</label></p>
+              <p class="option"><label>2004</label></p>
+              <p class="option"><label>2005</label></p>
+              <p class="option"><label>20006</label></p>
+            </div>
+          </div>
+          <div class="drop-down-container" id="cyear">
+            <p>Experied Year of License</p>
+            <div class="dropdowncard">
+              <p class="selected1">Choose Experied year License</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="dropDowmMenu" id="closeYear">
+              <p class="option1"><label>2007</label></p>
+              <p class="option1"><label>2008</label></p>
+              <p class="option1"><label>2009</label></p>
+              <p class="option1"><label>2010</label></p>
+              <p class="option1"><label>2011</label></p>
+              <p class="option1"><label>2012</label></p>
+              <p class="option1"><label>2013</label></p>
+            </div>
+          </div>
+          <div class="btns">
+            <button class="btn" id="back">< Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

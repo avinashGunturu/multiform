@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "segoe UI", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(122, 117, 117);
+}
+
+.main h1 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.conatiner {
+  background-color: #fff;
+  border-radius: 1rem;
+  width: 630px;
+  height: auto;
+  padding: 1rem;
+}
+
+.progress-bar-container {
+  position: relative;
+  width: 100%;
+  height: 6px;
+}
+.progress-bar {
+  width: inherit;
+  height: inherit;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.progress-bar.passive {
+  background-color: rgb(211, 209, 209);
+}
+
+.progress-bar.active {
+  background-color: orangered;
+  width: 00px;
+}
+.instruction {
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
+.instruction .instruction-heading {
+  color: orangered;
+  font-weight: bolder;
+}
+.instruction .instruction-p {
+  color: rgb(158, 158, 158);
+}
+
+.form-container {
+  padding: 1rem;
+  margin-top: 1rem;
+  display: none;
+}
+.form-container.active {
+  padding: 1rem;
+  margin-top: 1rem;
+  display: block;
+}
+.form-container .form p {
+  font-weight: bolder;
+}
+.form-container .form .name input {
+  padding: 0.6rem 1rem;
+  width: 100%;
+  border: 0;
+  border-radius: 14px;
+  background-color: rgb(232, 231, 231);
+  margin: 0.7rem 0;
+  margin-top: 10px;
+  margin-bottom: 1.5rem;
+}
+.form-container .form .name input:focus {
+  outline: none;
+}
+
+.form-container .form .ndl .radio-input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.form-container .form .ndl .radio-input-container .radio-input {
+  background-color: rgb(232, 231, 231);
+  width: 50%;
+  padding: 0.6rem;
+  border-radius: 14px;
+  color: rgb(155, 154, 154);
+}
+
+.form-container .form .ndl .radio-input-container .radio-input.one {
+  margin-right: 8px;
+}
+
+.radio-input.two {
+  margin-left: 8px;
+}
+
+.radio-input label {
+  margin-left: 8px;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  padding: 12px 32px;
+  border-radius: 20px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
+  border: 0;
+  background-color: orangered;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.btn i {
+  margin-left: 10px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.1s ease-in-out;
+}
+
+.place input {
+  padding: 13px 1rem;
+  width: 100%;
+  border: 0;
+  border-radius: 14px;
+  background-color: rgb(232, 231, 231);
+  margin: 0.7rem 0;
+  margin-top: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.form-container1 {
+  padding: 1rem;
+  margin-top: 1rem;
+  display: none;
+}
+.form-container1.active {
+  padding: 1rem;
+  margin-top: 1rem;
+  display: block;
+  position: relative;
+}
+.place p {
+  font-weight: bolder;
+}
+.place input:focus {
+  outline: none;
+}
+.drop-down-container p {
+  font-weight: bold;
+}
+
+.drop-down-container .dropdowncard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(232, 231, 231);
+  margin: 10px 0;
+  padding: 10px 16px;
+  border-radius: 10px;
+}
+
+.drop-down-container .dropdowncard p {
+  font-weight: 400;
+}
+
+.drop-down-container .dropDowmMenu.active {
+  height: 200px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  display: block;
+  position: absolute;
+  top: 10px;
+  background-color: white;
+  width: 100%;
+}
+.drop-down-container .dropDowmMenu {
+  display: none;
+}
+.drop-down-container .dropDowmMenu::-webkit-scrollbar {
+  width: 5px;
+}
+.drop-down-container .dropDowmMenu::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+.drop-down-container .dropDowmMenu::-webkit-scrollbar-thumb {
+  background: orangered;
+  border-radius: 10px;
+}
+
+.drop-down-container .dropDowmMenu p {
+  padding: 12px 16px;
+  width: 70%;
+  background-color: rgb(232, 231, 231);
+  margin: 10px auto;
+  text-align: center;
+  color: rgb(42, 39, 39);
+  border-radius: 15px;
+}
